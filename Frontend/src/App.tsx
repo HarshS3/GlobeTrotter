@@ -14,6 +14,7 @@ import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import TripCreate from "./pages/TripCreate";
+import TripDetails from "./pages/TripDetails";
 import Itinerary from "./pages/Itinerary";
 import ActivitySearch from "./pages/ActivitySearch";
 import Calendar from "./pages/Calendar";
@@ -31,6 +32,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/trips" element={<Trips />} />
+          <Route path="/trips/:id" element={<TripDetails />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/create" element={<TripCreate />} />

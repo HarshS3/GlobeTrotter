@@ -64,8 +64,12 @@ const Navigation = () => {
 
           {/* Desktop Auth Buttons + Avatar */}
           <div className="hidden md:flex items-center gap-4">
-            <Link to="/login"><Button variant="ghost" size="sm">Sign In</Button></Link>
-            <Link to="/register"><Button size="sm" className="btn-neumorph gradient-hero">Get Started</Button></Link>
+            {!user && (
+              <>
+                <Link to="/login"><Button variant="ghost" size="sm">Sign In</Button></Link>
+                <Link to="/register"><Button size="sm" className="btn-neumorph gradient-hero">Get Started</Button></Link>
+              </>
+            )}
             <Link to="/profile" className="ml-2">
               <Avatar className="h-8 w-8 ring-1 ring-primary/30">
                 {user?.avatarDataUrl ? (
@@ -114,8 +118,12 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="flex flex-col gap-3 pt-6 border-t border-border">
-                <Link to="/login" onClick={() => setIsMobileMenuOpen(false)}><Button variant="ghost">Sign In</Button></Link>
-                <Link to="/register" onClick={() => setIsMobileMenuOpen(false)}><Button className="gradient-hero">Get Started</Button></Link>
+                {!user && (
+                  <>
+                    <Link to="/login" onClick={() => setIsMobileMenuOpen(false)}><Button variant="ghost">Sign In</Button></Link>
+                    <Link to="/register" onClick={() => setIsMobileMenuOpen(false)}><Button className="gradient-hero">Get Started</Button></Link>
+                  </>
+                )}
                 <Link to="/profile" onClick={() => setIsMobileMenuOpen(false)} className="self-start">
                   <Avatar className="h-8 w-8 ring-1 ring-primary/30">
                     {user?.avatarDataUrl ? (

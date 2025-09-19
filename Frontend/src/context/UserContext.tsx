@@ -1,9 +1,11 @@
 import React, { createContext, useContext, useEffect, useMemo, useState } from "react";
 
 type User = {
+  id: number;
+  email: string;
   firstName: string;
   lastName: string;
-  avatarDataUrl?: string; // base64 data url preview
+  avatarDataUrl?: string; // photo url or data url
 };
 
 type UserContextType = {
@@ -19,12 +21,41 @@ const KEY = "globetrotter.user";
 export function UserProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
 
-  // load once
+  // load persisted snapshot & then hydrate from server status
   useEffect(() => {
     try {
       const raw = localStorage.getItem(KEY);
       if (raw) setUser(JSON.parse(raw));
     } catch {}
+    let cancelled = false;
+    import('@/lib/api').then(({ getAuthStatus }) => {
+      getAuthStatus().then(status => {
+        if (cancelled) return;
+        if (status.authenticated && status.user) {
+          setUser(u => ({
+            id: status.user.id,
+            email: status.user.email,
+            firstName: u?.firstName || '',
+            lastName: u?.lastName || '',
+            avatarDataUrl: u?.avatarDataUrl
+          }));
+        } else if (!status.authenticated) {
+          setUser(null);
+          // On initial bootstrap, if user is on a protected page without auth, redirect home
+          if (typeof window !== 'undefined' && window.location.pathname !== '/') {
+            window.location.replace('/');
+          }
+        }
+      }).catch(() => {/* ignore */});
+    });
+    const onLogout = () => {
+      setUser(null);
+      if (typeof window !== 'undefined' && window.location.pathname !== '/') {
+        window.location.replace('/');
+      }
+    };
+    window.addEventListener('auth:logout', onLogout);
+    return () => { cancelled = true; window.removeEventListener('auth:logout', onLogout); };
   }, []);
 
   useEffect(() => {
@@ -38,7 +69,7 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
     () => ({
       user,
       setUser,
-      updateUser: (u) => setUser((prev) => (prev ? { ...prev, ...u } : { firstName: "", lastName: "", ...u } as User)),
+  updateUser: (u) => setUser((prev) => (prev ? { ...prev, ...u } : { id: 0, email: '', firstName: '', lastName: '', ...u } as User)),
     }),
     [user]
   );

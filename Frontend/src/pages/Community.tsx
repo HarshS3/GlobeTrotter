@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Heart, ChatCircle, Share, BookmarkSimple, MapPin, Calendar } from "phosphor-react";
 import { Button } from "@/components/ui/button";
@@ -11,64 +11,26 @@ const Community = () => {
   const [likedPosts, setLikedPosts] = useState<number[]>([]);
   const [savedPosts, setSavedPosts] = useState<number[]>([]);
 
-  const posts = [
-    {
-      id: 1,
-      author: "Sarah Chen",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
-      username: "@sarahc_travels",
-      time: "2 hours ago",
-      location: "Kyoto, Japan",
-      content: "Just spent the most magical morning at Fushimi Inari shrine! The thousand torii gates are absolutely breathtaking at sunrise. Pro tip: get there early to avoid crowds and capture that perfect golden hour shot! 🌅⛩️",
-      image: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&h=400&fit=crop",
-      likes: 247,
-      comments: 18,
-      trip: "Japan Adventure - 14 days",
-      tags: ["Culture", "Photography", "Early Bird"]
-    },
-    {
-      id: 2,
-      author: "Marcus Rodriguez",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-      username: "@marcus_wanderlust",
-      time: "5 hours ago",
-      location: "Santorini, Greece",
-      content: "Sunset dinner in Oia was the perfect end to our honeymoon trip! The blue domed churches and whitewashed buildings create the most romantic atmosphere. Already planning our return! 💙🤍",
-      image: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=600&h=400&fit=crop",
-      likes: 189,
-      comments: 25,
-      trip: "Greek Islands Honeymoon",
-      tags: ["Romance", "Sunset", "Honeymoon"]
-    },
-    {
-      id: 3,
-      author: "Emma Thompson",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
-      username: "@emmatravels",
-      time: "1 day ago",
-      location: "Banff, Canada",
-      content: "Hiking the Plain of Six Glaciers trail was challenging but so worth it! Lake Louise's turquoise waters are even more stunning from above. Remember to bring layers - weather changes quickly in the mountains! 🏔️❄️",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop",
-      likes: 312,
-      comments: 42,
-      trip: "Canadian Rockies Adventure",
-      tags: ["Hiking", "Nature", "Adventure"]
-    },
-    {
-      id: 4,
-      author: "David Kim",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
-      username: "@david_explores",
-      time: "2 days ago",
-      location: "Marrakech, Morocco",
-      content: "The souks of Marrakech are a feast for all your senses! From the vibrant spices to the handcrafted textiles, every corner tells a story. Don't forget to haggle - it's part of the experience! 🏺✨",
-      image: "https://images.unsplash.com/photo-1539650116574-75c0c6d73fb6?w=600&h=400&fit=crop",
-      likes: 156,
-      comments: 31,
-      trip: "Morocco Cultural Journey",
-      tags: ["Culture", "Shopping", "Local Experience"]
+  const [trips, setTrips] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    async function load() {
+      setLoading(true);
+      try {
+        const res = await fetch(`${import.meta.env.VITE_APP_API_BASE || import.meta.env.VITE_API_BASE || 'http://localhost:3000'}/public/trips`);
+        if (!res.ok) throw new Error('Failed');
+        const data = await res.json();
+        if (!cancelled) setTrips(data);
+      } catch (e:any) {
+        if (!cancelled) setError('Could not load public trips');
+      } finally { if (!cancelled) setLoading(false); }
     }
-  ];
+    load();
+    return () => { cancelled = true; };
+  }, []);
 
   const toggleLike = (postId: number) => {
     setLikedPosts(prev =>
@@ -138,96 +100,53 @@ const Community = () => {
 
         {/* Posts Feed */}
         <div className="max-w-2xl mx-auto space-y-6">
-          {posts.map((post, index) => (
+          {loading && <div className="text-center text-muted-foreground">Loading public trips...</div>}
+          {error && !loading && <div className="text-center text-red-500 text-sm mb-4">{error}</div>}
+          {!loading && trips.map((trip, index) => (
             <motion.div
-              key={post.id}
+              key={trip.id}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 * index }}
             >
               <Card className="glass-card">
                 <CardHeader className="pb-4">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-3">
-                      <Avatar>
-                        <AvatarImage src={post.avatar} alt={post.author} />
-                        <AvatarFallback>{post.author.split(' ').map(n => n[0]).join('')}</AvatarFallback>
-                      </Avatar>
-                      <div>
-                        <div className="font-semibold">{post.author}</div>
-                        <div className="text-sm text-muted-foreground">{post.username}</div>
-                      </div>
+                  <div className="flex items-center gap-3 mb-2">
+                    <Avatar>
+                      <AvatarImage src={trip.photo_url || trip.cover_photo_url || trip.image_url} alt={trip.name} />
+                      <AvatarFallback>{trip.name?.[0]?.toUpperCase() || "T"}</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <div className="font-semibold">{trip.name}</div>
+                      <div className="text-sm text-muted-foreground">{trip.description}</div>
                     </div>
-                    <div className="text-sm text-muted-foreground">{post.time}</div>
                   </div>
-                  
                   <div className="flex items-center gap-2 text-sm text-muted-foreground mt-2">
                     <MapPin size={14} />
-                    {post.location}
+                    {trip.start_location} → {trip.end_location}
                   </div>
                 </CardHeader>
-
                 <CardContent className="pt-0">
-                  <p className="mb-4 leading-relaxed">{post.content}</p>
-                  
-                  {post.image && (
+                  {(trip.cover_photo_url || trip.image_url) && (
                     <div className="mb-4 rounded-lg overflow-hidden">
                       <img
-                        src={post.image}
-                        alt="Travel photo"
+                        src={trip.cover_photo_url || trip.image_url}
+                        alt={trip.name}
                         className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                       />
                     </div>
                   )}
-                  
                   <div className="flex items-center gap-2 mb-4">
                     <Calendar size={14} className="text-muted-foreground" />
-                    <span className="text-sm text-muted-foreground">{post.trip}</span>
-                  </div>
-                  
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {post.tags.map((tag) => (
-                      <Badge key={tag} variant="secondary" className="text-xs">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
-                  
-                  <div className="flex items-center justify-between pt-4 border-t border-border">
-                    <div className="flex items-center gap-4">
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        onClick={() => toggleLike(post.id)}
-                        className={`gap-2 ${likedPosts.includes(post.id) ? 'text-red-500' : ''}`}
-                      >
-                        <Heart size={18} weight={likedPosts.includes(post.id) ? "fill" : "regular"} />
-                        {post.likes + (likedPosts.includes(post.id) ? 1 : 0)}
-                      </Button>
-                      
-                      <Button variant="ghost" size="sm" className="gap-2">
-                        <ChatCircle size={18} />
-                        {post.comments}
-                      </Button>
-                      
-                      <Button variant="ghost" size="sm" className="gap-2">
-                        <Share size={18} />
-                      </Button>
-                    </div>
-                    
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => toggleSave(post.id)}
-                      className={savedPosts.includes(post.id) ? 'text-primary' : ''}
-                    >
-                      <BookmarkSimple size={18} weight={savedPosts.includes(post.id) ? "fill" : "regular"} />
-                    </Button>
+                    <span className="text-sm text-muted-foreground">{trip.start_date} → {trip.end_date}</span>
                   </div>
                 </CardContent>
               </Card>
             </motion.div>
           ))}
+          {!loading && !trips.length && (
+            <div className="text-center text-muted-foreground py-12">No public trips found.</div>
+          )}
         </div>
       </main>
     </div>

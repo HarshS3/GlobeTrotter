@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Plus, Calendar, MapPin, Clock } from "phosphor-react";
 import { Button } from "@/components/ui/button";
@@ -7,43 +7,49 @@ import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
 import { useUser } from "@/context/UserContext";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { useNavigate } from "react-router-dom";
+import { api } from "@/lib/api";
 
 const Trips = () => {
   const [activeTab, setActiveTab] = useState("upcoming");
+  const navigate = useNavigate();
   const { user } = useUser();
 
-  const trips = [
-    {
-      id: 1,
-      title: "Tokyo Adventure",
-      location: "Tokyo, Japan",
-      date: "Mar 15-22, 2024",
-      status: "upcoming",
-      image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&h=250&fit=crop",
-      activities: 8,
-      days: 7
-    },
-    {
-      id: 2,
-      title: "European Grand Tour",
-      location: "Paris, Rome, Barcelona",
-      date: "Apr 10-25, 2024",
-      status: "planning",
-      image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=400&h=250&fit=crop",
-      activities: 15,
-      days: 14
-    },
-    {
-      id: 3,
-      title: "Bali Retreat",
-      location: "Ubud, Bali",
-      date: "Feb 5-12, 2024",
-      status: "completed",
-      image: "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=400&h=250&fit=crop",
-      activities: 6,
-      days: 7
+  const [trips, setTrips] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    async function load() {
+      setLoading(true);
+      try {
+        const { data } = await api.get('/trips');
+        if (!cancelled) setTrips(data.map((t: any) => {
+          const start = t.start_date ? new Date(t.start_date) : null;
+          const end = t.end_date ? new Date(t.end_date) : null;
+          const days = (start && end) ? Math.max(1, Math.round((end.getTime() - start.getTime()) / (1000*60*60*24)) + 1) : 1;
+          return {
+            ...t,
+            title: t.name,
+            location: `${t.start_location || ''} -> ${t.end_location || ''}`,
+            status: 'upcoming',
+            image: t.cover_photo_url || t.image_url || 'https://placehold.co/600x400?text=Trip',
+            activities: t.activities_count ?? 0,
+            days,
+            date: (t.start_date && t.end_date) ? `${t.start_date} → ${t.end_date}` : (t.start_date || '')
+          };
+        }));
+      } catch (e:any) {
+        if (!cancelled) {
+          setError('Could not load trips');
+          if (import.meta.env.VITE_ENABLE_MOCKS === 'true') setTrips([]);
+        }
+      } finally { if (!cancelled) setLoading(false); }
     }
-  ];
+    load();
+    return () => { cancelled = true; };
+  }, []);
 
   const filteredTrips = trips.filter(trip => {
     if (activeTab === "upcoming") return trip.status === "upcoming";
@@ -106,6 +112,8 @@ const Trips = () => {
         </motion.div>
 
         {/* Trips Grid */}
+        {loading && <div className="text-center text-muted-foreground">Loading trips...</div>}
+        {error && !loading && <div className="text-center text-red-500 text-sm mb-4">{error}</div>}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -158,7 +166,7 @@ const Trips = () => {
                     <span className="text-sm text-muted-foreground">
                       {trip.activities} activities
                     </span>
-                    <Button variant="outline" size="sm">
+                    <Button variant="outline" size="sm" onClick={() => navigate(`/trips/${trip.id}`)}>
                       View Details
                     </Button>
                   </div>

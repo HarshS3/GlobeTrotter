@@ -15,7 +15,8 @@ export const tripCreateSchema = Joi.object({
   end_date: Joi.date().required(),
   cover_photo_url: Joi.string().uri().optional(),
   start_location: Joi.string().min(2).required(),
-  end_location: Joi.string().min(2).required()
+  end_location: Joi.string().min(2).required(),
+  image_url: Joi.string().uri().optional()
 });
 
 export const tripUpdateSchema = Joi.object({
@@ -26,7 +27,8 @@ export const tripUpdateSchema = Joi.object({
   cover_photo_url: Joi.string().uri(),
   is_public: Joi.boolean(),
   start_location: Joi.string().min(2),
-  end_location: Joi.string().min(2)
+  end_location: Joi.string().min(2),
+  image_url: Joi.string().uri()
 });
 
 export async function createTripHandler(req, res, next) {

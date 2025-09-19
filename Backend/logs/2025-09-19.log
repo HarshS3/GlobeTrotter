@@ -267,3 +267,242 @@
 {"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T08:39:40.695Z"}
 {"level":"info","message":"Redis connecting","timestamp":"2025-09-19T08:39:40.774Z"}
 {"level":"info","message":"Redis ready","timestamp":"2025-09-19T08:39:41.032Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T08:40:22.157Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T08:40:22.195Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T08:40:26.292Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T09:00:16.930Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T09:00:16.975Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T09:00:17.043Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T09:02:07.573Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T09:02:07.613Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T09:02:07.650Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T09:06:10.635Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T09:06:10.678Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T09:06:10.719Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T09:10:37.080Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T09:10:37.160Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T09:10:37.943Z"}
+{"durationMs":186,"level":"info","message":"request","method":"OPTIONS","path":"/auth/login","requestId":"87f7df4d-f629-4e91-8fc4-fd44cf45dade","status":204,"timestamp":"2025-09-19T09:11:16.007Z"}
+{"durationMs":838,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"71ed50d1-2d35-4ac6-8425-7a1047d32db9","status":429,"timestamp":"2025-09-19T09:11:18.609Z"}
+{"durationMs":611,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"34b7c2d9-83cd-476e-95de-e7a88ab16ce0","status":429,"timestamp":"2025-09-19T09:11:19.627Z"}
+{"durationMs":443,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"2ae3e9da-586c-4518-ab65-affddeb61a19","status":429,"timestamp":"2025-09-19T09:11:20.577Z"}
+{"durationMs":3998,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"672c652f-b80e-4c0b-9337-e6298f0aa091","status":200,"timestamp":"2025-09-19T09:11:20.613Z"}
+{"durationMs":3807,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"636cc597-a4f8-4d29-bf58-cdf086df1108","status":200,"timestamp":"2025-09-19T09:11:20.623Z"}
+{"durationMs":3640,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"9544cfc6-5030-4975-8fe4-7906319684f1","status":200,"timestamp":"2025-09-19T09:11:20.632Z"}
+{"durationMs":4152,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"5aae199f-0fad-4b27-ac45-4980fd8a5bd4","status":200,"timestamp":"2025-09-19T09:11:20.639Z"}
+{"durationMs":3086,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"d8137c51-eba8-486c-8d6d-071691d39e0f","status":200,"timestamp":"2025-09-19T09:11:20.856Z"}
+{"durationMs":125,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"150b705d-bbf6-43b8-afbe-6cda89640f5f","status":200,"timestamp":"2025-09-19T09:11:20.872Z","userId":1}
+{"durationMs":96,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"009854c6-0094-4a0d-a2a6-15a93df00d09","status":200,"timestamp":"2025-09-19T10:05:53.780Z"}
+{"durationMs":8,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"796488fb-913b-45cb-a544-c9a4f9b0c981","status":304,"timestamp":"2025-09-19T10:06:06.047Z"}
+{"durationMs":2,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"c11b404b-9ccc-4587-839d-d8df82a25b02","status":304,"timestamp":"2025-09-19T10:06:13.529Z"}
+{"durationMs":4,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"2360dbd9-dde7-4864-b3fe-e0538b598019","status":304,"timestamp":"2025-09-19T10:06:45.097Z"}
+{"durationMs":12,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"5ec9b7d8-db4e-4c8a-8262-13a81178ca08","status":401,"timestamp":"2025-09-19T10:06:47.119Z"}
+{"durationMs":3,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"ae1bd526-faac-4d94-9dc5-203da099a756","status":401,"timestamp":"2025-09-19T10:06:51.254Z"}
+{"durationMs":3,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"01d91acd-f55e-44a4-b7d4-6535c3fdfa9a","status":401,"timestamp":"2025-09-19T10:06:53.284Z"}
+{"durationMs":12,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"27d8da0c-b04a-4420-b937-47f0aa7cc949","status":401,"timestamp":"2025-09-19T10:06:53.512Z"}
+{"durationMs":3,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"973093ce-154a-4b4a-80c1-a86cb5b90b6a","status":401,"timestamp":"2025-09-19T10:06:54.028Z"}
+{"durationMs":3,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"b0817186-155d-4277-b03e-8ccf9dbdfa61","status":401,"timestamp":"2025-09-19T10:06:54.192Z"}
+{"durationMs":6,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"a5684bd8-083c-4fe5-9abf-f66d754a64aa","status":401,"timestamp":"2025-09-19T10:06:54.363Z"}
+{"durationMs":4,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"7e7f56f9-af60-49eb-a798-da02470ab870","status":401,"timestamp":"2025-09-19T10:06:54.485Z"}
+{"durationMs":2,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"d3bcc7fe-3a14-4a16-be9f-529b18aa70cf","status":401,"timestamp":"2025-09-19T10:06:54.626Z"}
+{"durationMs":4,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"284fc5ad-9131-4be2-a404-13228e92755f","status":401,"timestamp":"2025-09-19T10:06:54.854Z"}
+{"durationMs":1,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"e6bbf20a-f0a2-4f8c-89b4-09a8db92473f","status":401,"timestamp":"2025-09-19T10:06:55.109Z"}
+{"durationMs":3,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"541c3e19-edb9-41cb-9806-0e9900ab1678","status":401,"timestamp":"2025-09-19T10:06:55.270Z"}
+{"durationMs":5,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"dae69723-1ebd-4064-82eb-70717d856ac8","status":401,"timestamp":"2025-09-19T10:07:01.762Z"}
+{"durationMs":2,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"00bed5e8-f369-4e6e-afbd-79622e358f16","status":401,"timestamp":"2025-09-19T10:07:02.883Z"}
+{"durationMs":2,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"098d2619-39b6-4310-837a-1fe196223c90","status":401,"timestamp":"2025-09-19T10:07:03.660Z"}
+{"durationMs":2,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"009d179a-807b-47aa-8595-3a930e91f1e3","status":401,"timestamp":"2025-09-19T10:07:04.286Z"}
+{"durationMs":1,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"610204fb-a700-4a61-a783-a2f7cfac2d96","status":401,"timestamp":"2025-09-19T10:07:04.982Z"}
+{"durationMs":2,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"bcb74940-417d-4ddd-a226-c25b7eba884e","status":304,"timestamp":"2025-09-19T10:07:07.335Z"}
+{"durationMs":5,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"1593dc7b-4b37-48ba-9f9d-1be69788212f","status":304,"timestamp":"2025-09-19T10:07:21.522Z"}
+{"durationMs":1,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"04e1ac9c-5033-450d-b520-46f18c37ead5","status":401,"timestamp":"2025-09-19T10:07:23.306Z"}
+{"durationMs":8,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"02e0169d-59d0-4d3a-b040-4898e5dfe9c1","status":401,"timestamp":"2025-09-19T10:07:23.927Z"}
+{"durationMs":2,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"bc8b27ca-514b-4563-9866-6642c533d6d9","status":401,"timestamp":"2025-09-19T10:07:24.148Z"}
+{"durationMs":10,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"c3c5801e-38c8-4bb5-b20e-8eb58043a84c","status":304,"timestamp":"2025-09-19T10:10:00.650Z"}
+{"durationMs":3,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"50ee676f-b9cf-4bb6-bc7d-17e04d908067","status":304,"timestamp":"2025-09-19T10:10:19.729Z"}
+{"durationMs":4,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"433ed28e-2ef8-4b5d-9597-c0dee4ec75b5","status":304,"timestamp":"2025-09-19T10:10:28.733Z"}
+{"durationMs":5,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"db9b617d-08e3-40e5-9d94-403b38096bda","status":304,"timestamp":"2025-09-19T10:10:40.764Z"}
+{"durationMs":1,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"3fe3586b-eea9-49f4-ad14-d6f2d17aa5fa","status":304,"timestamp":"2025-09-19T10:10:40.829Z"}
+{"durationMs":2,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"18a0ae5e-0110-462e-ac04-37a43dde69d0","status":304,"timestamp":"2025-09-19T10:10:52.732Z"}
+{"durationMs":2,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"c5a40a7c-c940-4483-8498-6653575f23c7","status":304,"timestamp":"2025-09-19T10:11:20.743Z"}
+{"durationMs":2,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"64b3eda2-bb0f-4cc5-a2a5-d8e87b25e01b","status":304,"timestamp":"2025-09-19T10:11:20.763Z"}
+{"durationMs":2,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"497ac101-4d80-47b8-ac1f-2d5d0e72fe69","status":304,"timestamp":"2025-09-19T10:11:29.886Z"}
+{"durationMs":3,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"801e06c7-31f3-4de2-8fb7-28033970e367","status":304,"timestamp":"2025-09-19T10:11:30.472Z"}
+{"durationMs":5,"level":"info","message":"request","method":"OPTIONS","path":"/auth/login","requestId":"a4334444-899c-472f-96dc-1637f0ee51ff","status":204,"timestamp":"2025-09-19T10:11:54.856Z"}
+{"durationMs":1132,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"32db7436-556b-489c-844d-c97c591689f5","status":200,"timestamp":"2025-09-19T10:11:55.996Z"}
+{"durationMs":36,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"d05533ad-17a2-4147-a332-1b54d8c00119","status":304,"timestamp":"2025-09-19T10:11:56.099Z","userId":1}
+{"durationMs":246,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"1ba49836-da5b-4ffc-a6d9-dd2c3222c9d1","status":200,"timestamp":"2025-09-19T10:15:40.118Z","userId":1}
+{"durationMs":62,"level":"info","message":"request","method":"GET","path":"/user/1","requestId":"38bf990c-d79e-4faf-9ae4-d199d7e56849","status":200,"timestamp":"2025-09-19T10:15:40.196Z","userId":1}
+{"durationMs":138,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"0063f832-b426-4849-85ab-c0c73eb6b7c2","status":304,"timestamp":"2025-09-19T10:15:58.685Z","userId":1}
+{"durationMs":1,"level":"info","message":"request","method":"OPTIONS","path":"/user/1","requestId":"8be660be-d203-4a31-a88a-142757de8254","status":204,"timestamp":"2025-09-19T10:15:58.697Z"}
+{"durationMs":107,"level":"info","message":"request","method":"PUT","path":"/user/1","requestId":"58e03e5a-5970-42df-986d-22a56ef7d989","status":200,"timestamp":"2025-09-19T10:15:58.809Z","userId":1}
+{"durationMs":144,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"a35370c8-92fa-401f-b716-fa9655a674be","status":304,"timestamp":"2025-09-19T10:16:38.955Z","userId":1}
+{"durationMs":1053,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"49e2d233-fd3e-44b4-ad36-af02aaf186bd","status":304,"timestamp":"2025-09-19T10:17:11.593Z","userId":1}
+{"durationMs":273,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"03aa2222-ea52-4f70-8611-f5cd530cf049","status":304,"timestamp":"2025-09-19T10:20:19.206Z","userId":1}
+{"durationMs":128,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"650064e2-1e8c-4741-a7ff-ee7ade447392","status":304,"timestamp":"2025-09-19T10:22:39.863Z","userId":1}
+{"durationMs":17,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"3f735e0d-5451-4bca-b1a1-8e2ae5c201c3","status":304,"timestamp":"2025-09-19T10:22:46.242Z","userId":1}
+{"durationMs":30,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"beefbbea-4c93-4555-9917-586516752ce3","status":304,"timestamp":"2025-09-19T10:22:47.310Z","userId":1}
+{"durationMs":102,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"2b63d743-4e8f-4392-944d-0b0c27517099","status":200,"timestamp":"2025-09-19T10:22:49.611Z","userId":1}
+{"durationMs":220,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"71748bc6-f9f2-4961-b6e7-6a91474e4d1d","status":200,"timestamp":"2025-09-19T10:22:49.742Z","userId":1}
+{"durationMs":132,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"bf7cee1e-b339-4cca-ad80-f7f64caeab41","status":304,"timestamp":"2025-09-19T10:23:01.894Z","userId":1}
+{"durationMs":183,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"0c2982f6-ae43-4cc4-af79-fb1de9a0c9cf","status":304,"timestamp":"2025-09-19T10:23:17.251Z","userId":1}
+{"durationMs":34,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"19cc7ba9-a316-4dcd-8f13-531dc4b8429b","status":304,"timestamp":"2025-09-19T10:23:21.657Z","userId":1}
+{"durationMs":120,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"b74ebcb9-be44-44bb-b682-80d2e2370ec7","status":304,"timestamp":"2025-09-19T10:23:21.765Z","userId":1}
+{"durationMs":90,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"567d7298-30c1-458a-a352-c63ae1db2d5a","status":401,"timestamp":"2025-09-19T10:27:11.576Z"}
+{"durationMs":4,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"9cf723ef-d878-4398-8698-e3b8bc752a33","status":401,"timestamp":"2025-09-19T10:27:11.675Z"}
+{"durationMs":335,"level":"info","message":"request","method":"POST","path":"/auth/refresh","requestId":"2ec1192e-0074-42da-a86f-961c9621cb1a","status":200,"timestamp":"2025-09-19T10:27:11.937Z"}
+{"durationMs":35,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"9a526fc6-54c2-4308-b43d-8aa6c76f3f60","status":304,"timestamp":"2025-09-19T10:27:11.985Z","userId":1}
+{"durationMs":122,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"469ad54a-38f7-4ac3-a2ec-13aeea3315c3","status":304,"timestamp":"2025-09-19T10:27:12.080Z","userId":1}
+{"durationMs":26,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"4af461f3-c75f-4fc9-a703-bd74fb07f5fc","status":304,"timestamp":"2025-09-19T10:27:14.619Z","userId":1}
+{"durationMs":305,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"f7dc50c6-8d6e-4c9c-9847-fdf187274863","status":304,"timestamp":"2025-09-19T10:32:17.925Z","userId":1}
+{"durationMs":233,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"e90174b0-4c5e-4e72-8dbf-879468a53b6f","status":304,"timestamp":"2025-09-19T10:32:17.945Z","userId":1}
+{"durationMs":761,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"feeae0de-553b-48ba-b57d-7a0f0e5e0f18","status":304,"timestamp":"2025-09-19T10:34:23.516Z","userId":1}
+{"durationMs":763,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"4f8012a3-913f-4821-aef0-07d9677a172c","status":304,"timestamp":"2025-09-19T10:34:23.534Z","userId":1}
+{"durationMs":262,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"47a88ebf-0a55-45a8-b90e-ae6fcde1971c","status":304,"timestamp":"2025-09-19T10:36:15.973Z","userId":1}
+{"durationMs":294,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"0f413899-a2ce-4fa0-8b9e-188ce4683e13","status":304,"timestamp":"2025-09-19T10:36:15.996Z","userId":1}
+{"durationMs":18,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"e8606099-8e30-4805-a1d5-4a68cb3c077d","status":304,"timestamp":"2025-09-19T10:36:18.203Z","userId":1}
+{"durationMs":17,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"d77083ab-9850-4d79-887e-c25e531d8573","status":304,"timestamp":"2025-09-19T10:36:18.209Z","userId":1}
+{"durationMs":8,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"9b387d5b-c38f-422b-8d47-98083121d6e2","status":304,"timestamp":"2025-09-19T10:36:18.738Z","userId":1}
+{"durationMs":126,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"3ea4e596-28ea-4609-9fb8-b8ae1a23ab36","status":304,"timestamp":"2025-09-19T10:36:35.680Z","userId":1}
+{"durationMs":157,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"cbc67020-51ed-47fe-aac3-620df9937b1d","status":304,"timestamp":"2025-09-19T10:38:16.036Z","userId":1}
+{"durationMs":178,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"18fe7620-2852-4689-a985-a9d15510a2ef","status":304,"timestamp":"2025-09-19T10:42:01.944Z","userId":1}
+{"durationMs":9,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"7761f715-16f0-4388-8b2f-45b0808d81c2","status":304,"timestamp":"2025-09-19T10:42:10.098Z","userId":1}
+{"durationMs":10,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"bc34b1a2-2b19-49f5-86b1-2b01a12da6ff","status":304,"timestamp":"2025-09-19T10:42:10.771Z","userId":1}
+{"durationMs":40,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"926d9bee-7b8d-4987-9089-df1a5e997df6","status":401,"timestamp":"2025-09-19T10:42:24.513Z"}
+{"durationMs":8,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"3e0265b0-56fc-4e2a-bc2c-8d4075283395","status":401,"timestamp":"2025-09-19T10:42:24.543Z"}
+{"durationMs":344,"level":"info","message":"request","method":"POST","path":"/auth/refresh","requestId":"424ba35b-85ef-45d9-adec-0be93b182da5","status":401,"timestamp":"2025-09-19T10:42:24.898Z"}
+{"durationMs":4,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"722e5500-1ea1-4a61-9ef1-711483f950bf","status":401,"timestamp":"2025-09-19T10:42:34.830Z"}
+{"durationMs":4,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"54d1236a-cd6c-4940-bae2-b29166aa79c8","status":401,"timestamp":"2025-09-19T10:42:34.841Z"}
+{"durationMs":3,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"f89a4f81-42fe-48c5-86a3-b10a2e590640","status":200,"timestamp":"2025-09-19T10:42:35.189Z"}
+{"durationMs":195,"level":"info","message":"request","method":"POST","path":"/auth/refresh","requestId":"3ed52b46-0d1f-45d1-bf28-ae8754d25b2e","status":401,"timestamp":"2025-09-19T10:42:35.344Z"}
+{"durationMs":4,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"9a82b527-3c9a-4681-b321-7a4ae7534762","status":401,"timestamp":"2025-09-19T10:43:03.513Z"}
+{"durationMs":4,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"b2d7ac8b-23f7-4465-9621-953ee75ead18","status":401,"timestamp":"2025-09-19T10:43:03.519Z"}
+{"durationMs":4,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"3fb71528-0cc2-4241-b9d1-dc32756db8cc","status":304,"timestamp":"2025-09-19T10:43:03.772Z"}
+{"durationMs":1111,"level":"info","message":"request","method":"POST","path":"/auth/refresh","requestId":"ec7ae64f-a502-42e2-94c0-561a1bd4f5d1","status":401,"timestamp":"2025-09-19T10:43:04.840Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T10:46:47.729Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T10:46:47.849Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T10:46:48.205Z"}
+{"durationMs":29,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"ac6ccf8b-efb7-4082-abce-d511ba7916b5","status":401,"timestamp":"2025-09-19T10:46:50.913Z"}
+{"durationMs":8,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"a0a030d4-659c-4156-814c-fd54d33723c1","status":401,"timestamp":"2025-09-19T10:46:50.929Z"}
+{"durationMs":4,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"7e7a3929-3ed0-4caa-a56f-e21b3697ac1b","status":304,"timestamp":"2025-09-19T10:46:51.317Z"}
+{"durationMs":264,"level":"info","message":"request","method":"POST","path":"/auth/refresh","requestId":"3bb32996-2c56-4962-8205-5ad48fdb631e","status":401,"timestamp":"2025-09-19T10:46:51.541Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T10:47:22.439Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T10:47:22.511Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T10:47:22.547Z"}
+{"durationMs":20,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"24bb89f3-03f9-4183-b92f-720c9a7d6da1","status":401,"timestamp":"2025-09-19T10:47:22.627Z"}
+{"durationMs":6,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"8563921c-1715-490b-b682-dfcd9faaad43","status":401,"timestamp":"2025-09-19T10:49:19.877Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T10:49:23.743Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T10:49:23.788Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T10:49:23.838Z"}
+{"durationMs":20,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"bab3e322-700a-465b-a4aa-0bd841d931de","status":401,"timestamp":"2025-09-19T10:49:25.513Z"}
+{"durationMs":4,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"7681d883-65bf-44a2-a1bd-815a07823e34","status":304,"timestamp":"2025-09-19T10:49:25.845Z"}
+{"durationMs":225,"level":"info","message":"request","method":"POST","path":"/auth/refresh","requestId":"c862ce95-ec19-4c9c-9f64-e0d0ff879c48","status":401,"timestamp":"2025-09-19T10:49:26.044Z"}
+{"durationMs":13,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"2a397096-c894-4a33-91a9-5325c3a9ab13","status":401,"timestamp":"2025-09-19T10:49:30.626Z"}
+{"level":"info","message":"Shutdown initiated","timestamp":"2025-09-19T10:49:49.558Z"}
+{"level":"info","message":"Shutdown complete","timestamp":"2025-09-19T10:49:49.592Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T10:50:04.878Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T10:50:04.929Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T10:50:04.947Z"}
+{"durationMs":57,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"d4e80695-5e75-4c0f-949a-bd35f6273c8e","status":401,"timestamp":"2025-09-19T10:52:27.660Z"}
+{"durationMs":2,"level":"info","message":"request","method":"OPTIONS","path":"/auth/login","requestId":"cfd7bb39-ef08-4508-ac49-c14f6a9770d0","status":204,"timestamp":"2025-09-19T10:52:37.682Z"}
+{"durationMs":1196,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"b388aebf-b6c2-4dfc-a22d-adbc0ca8b027","status":200,"timestamp":"2025-09-19T10:52:38.891Z"}
+{"durationMs":38,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"a191e6bd-d0d6-46d6-a24d-54751913d6a5","status":200,"timestamp":"2025-09-19T10:52:39.014Z","userId":1}
+{"durationMs":20,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"81d31c45-12d9-40e9-ab07-0b33f329c4a4","status":200,"timestamp":"2025-09-19T10:52:41.739Z","userId":1}
+{"durationMs":25,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"437e9433-03c7-4ada-b841-2f8e1b46c9d1","status":304,"timestamp":"2025-09-19T10:52:41.777Z","userId":1}
+{"durationMs":139,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"40e198f7-5dcf-4352-b820-0a866bc27ea0","status":200,"timestamp":"2025-09-19T10:55:09.907Z","userId":1}
+{"durationMs":173,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"3f3cbe06-7a53-4b0a-b08c-2a8105202f47","status":304,"timestamp":"2025-09-19T10:55:09.924Z","userId":1}
+{"durationMs":29,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"f9a3acc9-c543-4350-bb39-3be2273e1cb6","status":304,"timestamp":"2025-09-19T10:55:10.014Z","userId":1}
+{"durationMs":14,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"38f69450-a4b6-4a02-8b3b-d24bd1e05542","status":304,"timestamp":"2025-09-19T10:55:10.753Z","userId":1}
+{"durationMs":14,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"c87c1411-da1d-4a06-901f-ccd6354d2ab1","status":304,"timestamp":"2025-09-19T10:55:10.781Z","userId":1}
+{"durationMs":197,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"27831643-30c0-411d-921c-92036cfd6e51","status":304,"timestamp":"2025-09-19T10:56:37.202Z","userId":1}
+{"durationMs":298,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"a0b82b9e-8629-49c2-ac41-3abd8620b2c2","status":304,"timestamp":"2025-09-19T10:56:37.237Z","userId":1}
+{"durationMs":46,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"d83d45e1-14f5-46f8-b5e7-b846b557e1ed","status":304,"timestamp":"2025-09-19T10:56:37.297Z","userId":1}
+{"durationMs":20,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"e4bc1191-9eb2-4698-b2e5-5abf3a36df27","status":304,"timestamp":"2025-09-19T10:56:37.829Z","userId":1}
+{"durationMs":22,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"0b293681-65ef-4a35-92ed-0c1782b4e0d5","status":304,"timestamp":"2025-09-19T10:56:37.879Z","userId":1}
+{"durationMs":161,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"9daaaa68-9749-4fb1-87a7-e00bb59c8041","status":304,"timestamp":"2025-09-19T10:56:52.737Z","userId":1}
+{"durationMs":204,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"5b35bca3-dc9c-4a15-8d40-b271845a8284","status":304,"timestamp":"2025-09-19T10:56:53.335Z","userId":1}
+{"durationMs":75,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"87439a34-40f4-4725-8154-de8b95220f0e","status":304,"timestamp":"2025-09-19T10:56:53.439Z","userId":1}
+{"durationMs":8,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"e6cdc15f-4675-474d-9477-3c4cbfd893c0","status":304,"timestamp":"2025-09-19T10:56:55.689Z","userId":1}
+{"durationMs":16,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"aefc3170-e32d-4f58-8096-22f278360053","status":304,"timestamp":"2025-09-19T10:56:58.213Z","userId":1}
+{"durationMs":11,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"e6c4919c-10d1-45ac-a845-6437818e29ca","status":304,"timestamp":"2025-09-19T10:56:58.237Z","userId":1}
+{"durationMs":17,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"b38cf51f-eb72-4ecd-9bcb-e47cfa9fee5d","status":304,"timestamp":"2025-09-19T10:56:59.936Z","userId":1}
+{"durationMs":418,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"b53fc117-d70c-47ec-b679-8fb27c1c9db5","status":304,"timestamp":"2025-09-19T11:06:14.167Z","userId":1}
+{"durationMs":16,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"e715b49c-3e57-4cd9-9d99-28a779f7deca","status":304,"timestamp":"2025-09-19T11:06:14.395Z","userId":1}
+{"durationMs":267,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"109d41aa-80de-4f69-bbf7-abadb7eb92ad","status":304,"timestamp":"2025-09-19T11:06:44.210Z","userId":1}
+{"durationMs":9,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"66cd425f-e7a7-4a42-a0d6-9d68c27b63ab","status":304,"timestamp":"2025-09-19T11:06:44.323Z","userId":1}
+{"durationMs":158,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"aba19472-7c22-4b75-b505-2b134a00ceed","status":401,"timestamp":"2025-09-19T11:26:10.964Z"}
+{"durationMs":10,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"9c463737-d721-4a27-8d09-c12c38448f81","status":200,"timestamp":"2025-09-19T11:26:11.131Z"}
+{"durationMs":89,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"45356c59-b8e5-4be7-b575-68c0a103bf99","status":401,"timestamp":"2025-09-19T11:31:58.102Z"}
+{"durationMs":10,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"eac47dda-dd38-41c0-9876-f84591da11bf","status":304,"timestamp":"2025-09-19T11:31:58.353Z"}
+{"durationMs":8,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"3aaef28f-134d-4be2-8921-1fc6bf5f3a77","status":401,"timestamp":"2025-09-19T11:32:05.082Z"}
+{"durationMs":1,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"7705269f-c6c1-49d4-92b9-3c41fe186f05","status":304,"timestamp":"2025-09-19T11:32:05.384Z"}
+{"durationMs":8,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"4a50d7f7-3bbd-40d0-9540-9e0236549df7","status":304,"timestamp":"2025-09-19T11:32:09.578Z"}
+{"durationMs":7,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"11d0fe41-644d-4785-a5e4-1f8909db9344","status":401,"timestamp":"2025-09-19T11:32:10.749Z"}
+{"durationMs":2,"level":"info","message":"request","method":"OPTIONS","path":"/auth/login","requestId":"7e2a3109-96d3-4a59-a85b-c64b9b990b31","status":204,"timestamp":"2025-09-19T11:32:28.572Z"}
+{"durationMs":996,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"2f695894-38cb-46f9-8c01-36cf865fe300","status":401,"timestamp":"2025-09-19T11:32:29.574Z"}
+{"durationMs":97,"level":"info","message":"request","method":"POST","path":"/auth/refresh","requestId":"8eee7c3a-a02f-4d70-a01b-d10f50412629","status":200,"timestamp":"2025-09-19T11:32:29.683Z"}
+{"durationMs":552,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"26c4c147-6d73-4f9f-ad59-432b95ba644d","status":401,"timestamp":"2025-09-19T11:32:30.246Z"}
+{"durationMs":556,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"74f374f3-14a8-4962-b035-603586da68f4","status":401,"timestamp":"2025-09-19T11:32:32.586Z"}
+{"durationMs":13,"level":"info","message":"request","method":"POST","path":"/auth/refresh","requestId":"5fe30566-1bd8-4ade-b1e2-59440e9c7181","status":401,"timestamp":"2025-09-19T11:32:32.606Z"}
+{"durationMs":1,"level":"info","message":"request","method":"OPTIONS","path":"/auth/login","requestId":"12084b8d-95a1-4b10-8b5e-f07864c15bd4","status":204,"timestamp":"2025-09-19T11:32:37.388Z"}
+{"durationMs":538,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"b0680e1b-2c6f-44ae-b274-f2c216bbfd11","status":401,"timestamp":"2025-09-19T11:32:37.930Z"}
+{"durationMs":1,"level":"info","message":"request","method":"OPTIONS","path":"/auth/login","requestId":"278515e8-bba2-4a6f-92d7-c6b8ea86d077","status":204,"timestamp":"2025-09-19T11:32:49.036Z"}
+{"durationMs":673,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"8b0af779-7718-4566-af2c-6abfcf440285","status":401,"timestamp":"2025-09-19T11:32:49.716Z"}
+{"durationMs":0,"level":"info","message":"request","method":"OPTIONS","path":"/auth/login","requestId":"cea514a3-59f2-497d-a967-04e47ad5538f","status":204,"timestamp":"2025-09-19T11:32:55.251Z"}
+{"durationMs":6,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"cc04674a-e774-421e-94c4-f0286b19840f","status":429,"timestamp":"2025-09-19T11:32:55.262Z"}
+{"durationMs":7,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"2f60c596-ca0a-4b13-8d15-aeabb528622a","status":429,"timestamp":"2025-09-19T11:33:00.096Z"}
+{"durationMs":1,"level":"info","message":"request","method":"OPTIONS","path":"/auth/login","requestId":"01ee0dd2-0f10-4caa-8b2f-d2c54898ff29","status":204,"timestamp":"2025-09-19T11:33:28.219Z"}
+{"durationMs":6,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"f0896d75-ac09-41f8-9c19-07b6a88b64a4","status":429,"timestamp":"2025-09-19T11:33:28.231Z"}
+{"durationMs":115,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"6d7e130c-42ed-4161-96a0-9f34eed28c53","status":200,"timestamp":"2025-09-19T11:33:32.455Z","userId":1}
+{"durationMs":1,"level":"info","message":"request","method":"OPTIONS","path":"/auth/login","requestId":"13b1a16f-65e0-404d-aa57-4dfa46434782","status":204,"timestamp":"2025-09-19T11:33:40.608Z"}
+{"durationMs":651,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"223a1d35-7e69-48bc-bb2b-de24caf2119d","status":200,"timestamp":"2025-09-19T11:33:41.265Z"}
+{"durationMs":32,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"24e4a22e-587f-49c1-9ef0-cd6cd9b8983c","status":304,"timestamp":"2025-09-19T11:33:41.351Z","userId":1}
+{"durationMs":111,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"33a7e258-ac11-4a66-bc70-11eceaf54d6b","status":304,"timestamp":"2025-09-19T11:34:47.563Z","userId":1}
+{"durationMs":23,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"8a72b449-0783-49ab-b612-ec60374f893a","status":304,"timestamp":"2025-09-19T11:34:47.597Z","userId":1}
+{"durationMs":21,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"92c45bff-a99d-408d-b20b-3e45872e13a7","status":304,"timestamp":"2025-09-19T11:34:51.194Z","userId":1}
+{"durationMs":376,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"bd71bba6-05ae-449e-a036-540ed7fe0e31","status":304,"timestamp":"2025-09-19T11:38:50.148Z","userId":1}
+{"durationMs":144,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"c24de9e4-2073-46aa-87a9-f0f4ff0e9d57","status":304,"timestamp":"2025-09-19T11:39:31.502Z","userId":1}
+{"durationMs":143,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"90f963b1-ffd1-45fe-ad69-6d00717b0a8f","status":304,"timestamp":"2025-09-19T11:40:07.535Z","userId":1}
+{"durationMs":423,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"17ac067d-8640-4f79-b762-e6cbff6f5f34","status":304,"timestamp":"2025-09-19T11:47:58.443Z","userId":1}
+{"durationMs":123,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"b38aaba6-df1e-41c3-b6c7-7ee337e48aff","status":304,"timestamp":"2025-09-19T11:48:15.369Z","userId":1}
+{"durationMs":11,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"761eb264-c762-4422-93f1-e055cae72ac3","status":304,"timestamp":"2025-09-19T11:48:15.808Z","userId":1}
+{"durationMs":47,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"b0b65ad3-3e8b-4745-a73e-c44389858098","status":401,"timestamp":"2025-09-19T11:49:21.454Z"}
+{"durationMs":215,"level":"info","message":"request","method":"POST","path":"/auth/refresh","requestId":"07571811-1186-42b5-b348-956945286b6a","status":200,"timestamp":"2025-09-19T11:49:21.707Z"}
+{"durationMs":11,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"c8020a3c-0c94-462b-a71b-c9c52b105d24","status":304,"timestamp":"2025-09-19T11:49:21.728Z","userId":1}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T11:50:02.393Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T11:50:02.441Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T11:50:02.549Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T11:54:40.574Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T11:54:40.637Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T11:54:40.727Z"}
+{"durationMs":331,"level":"info","message":"request","method":"GET","path":"/activities","requestId":"5eb0d078-c0e5-431d-b8df-dd88748e637b","status":200,"timestamp":"2025-09-19T11:56:16.011Z","userId":1}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T12:00:24.771Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T12:00:24.910Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T12:00:25.214Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T12:00:28.888Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T12:00:28.927Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T12:00:28.945Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T12:02:06.244Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T12:02:06.319Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T12:02:06.440Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T12:24:44.826Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T12:24:44.875Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T12:24:44.992Z"}
+{"durationMs":18,"level":"info","message":"request","method":"GET","path":"/public/trips","requestId":"bf904c04-800a-4d6d-a1f3-658a5c779b80","status":404,"timestamp":"2025-09-19T12:25:01.564Z"}
+{"durationMs":9,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"721c9a0e-c082-457f-b7c5-fd81bb2fc54d","status":200,"timestamp":"2025-09-19T12:25:02.311Z"}
+{"durationMs":4,"level":"info","message":"request","method":"GET","path":"/public/trips","requestId":"5f5705e6-1e93-4bc9-8258-d33c9503a14a","status":404,"timestamp":"2025-09-19T12:34:19.618Z"}
+{"durationMs":4,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"d5ceb0de-e1d9-4dbb-983a-73c0e0421e42","status":304,"timestamp":"2025-09-19T12:34:20.634Z"}
+{"durationMs":2,"level":"info","message":"request","method":"GET","path":"/public/trips","requestId":"2fe6f983-6cb5-4102-8935-eddedd600523","status":404,"timestamp":"2025-09-19T12:35:03.099Z"}
+{"durationMs":3,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"ded2ccb7-00ca-4c2c-b3b7-7b898c63b5be","status":304,"timestamp":"2025-09-19T12:35:03.405Z"}
+{"durationMs":2,"level":"info","message":"request","method":"GET","path":"/public/trips","requestId":"8ddc6591-6acc-4722-9b1e-9381f676ef61","status":404,"timestamp":"2025-09-19T12:35:04.518Z"}
+{"durationMs":1,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"38e22534-96e9-4cee-b25c-d168320f40b0","status":304,"timestamp":"2025-09-19T12:35:04.755Z"}
+{"durationMs":61,"level":"info","message":"request","method":"GET","path":"/public/trips","requestId":"f725c766-f7ea-4885-8c89-7baae3a6fa7f","status":404,"timestamp":"2025-09-19T13:24:46.618Z"}
+{"durationMs":8,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"1d588348-4c03-4b9d-a389-127c6f7b8217","status":304,"timestamp":"2025-09-19T13:24:47.635Z"}
+{"durationMs":9,"level":"info","message":"request","method":"OPTIONS","path":"/auth/login","requestId":"e7269cf6-238f-4f9c-8b5e-456a0d242a84","status":204,"timestamp":"2025-09-19T13:28:36.329Z"}
+{"durationMs":1162,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"170befb1-3446-40fa-8ead-2f5a182a542c","status":200,"timestamp":"2025-09-19T13:28:37.497Z"}
+{"durationMs":29,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"2dfecd20-2992-4d64-a877-2b03ca40d4e9","status":304,"timestamp":"2025-09-19T13:28:37.604Z","userId":1}
+{"durationMs":3,"level":"info","message":"request","method":"GET","path":"/public/trips","requestId":"abf93476-ab53-40d4-8a0c-7e2c28c6b161","status":404,"timestamp":"2025-09-19T13:28:41.031Z"}
+{"durationMs":200,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"006ed532-996c-4acc-8c22-231c162d1868","status":304,"timestamp":"2025-09-19T13:29:13.099Z","userId":1}
+{"durationMs":19,"level":"info","message":"request","method":"GET","path":"/trips/1","requestId":"8ece3f70-e5c3-4ad5-a1ff-ad44d9e8b471","status":304,"timestamp":"2025-09-19T13:29:16.090Z","userId":1}
+{"durationMs":18,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"d075173a-9d79-471c-92fa-451d73f7e937","status":304,"timestamp":"2025-09-19T13:29:16.118Z","userId":1}
+{"durationMs":8,"level":"info","message":"request","method":"GET","path":"/trips","requestId":"d50b45e7-226c-4f36-8fd0-b589e0b14c6d","status":304,"timestamp":"2025-09-19T13:29:20.319Z","userId":1}

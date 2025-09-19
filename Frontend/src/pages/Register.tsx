@@ -9,6 +9,7 @@ import * as React from "react";
 import { useUser } from "@/context/UserContext";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useToast } from "@/hooks/use-toast";
+import { register as apiRegister } from "@/lib/api";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -24,14 +25,31 @@ const Register = () => {
     reader.readAsDataURL(file);
   };
 
-  const handleRegister = (e: React.FormEvent) => {
+  const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
     const form = e.target as HTMLFormElement;
     const firstName = (form.elements.namedItem("firstName") as HTMLInputElement)?.value || "Traveler";
     const lastName = (form.elements.namedItem("lastName") as HTMLInputElement)?.value || "";
-    setUser({ firstName, lastName, avatarDataUrl: avatar });
-    toast({ title: `Hey, ${firstName}!`, description: "Welcome to Globetrotter." });
-    navigate("/trips");
+    const email = (form.elements.namedItem("email") as HTMLInputElement)?.value;
+    const password = (form.elements.namedItem("password") as HTMLInputElement)?.value;
+    try {
+      await apiRegister({
+        email,
+        password,
+        first_name: firstName,
+        last_name: lastName,
+        phone: 'N/A',
+        city: 'Unknown',
+        country: 'Unknown',
+        additional_info: 'Registered via UI',
+        photo_url: ''
+      });
+      setUser({ firstName, lastName, avatarDataUrl: avatar });
+      toast({ title: `Welcome, ${firstName}!`, description: 'Account created.' });
+      navigate('/trips');
+    } catch (err: any) {
+      toast({ title: 'Registration failed', description: err?.response?.data?.message || 'Please try again', variant: 'destructive' });
+    }
   };
 
   return (

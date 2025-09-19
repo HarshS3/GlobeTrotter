@@ -1,0 +1,90 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: globetrotter
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks: [app]
+  redis:
+    image: redis:7-alpine
+    networks: [app]
+  backend:
+    build: ./Backend
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@postgres:5432/globetrotter
+      REDIS_HOST: redis
+      JWT_SECRET: dev_compose_secret
+      ACCESS_TOKEN_TTL_MIN: 15
+      REFRESH_TOKEN_TTL_DAYS: 7
+      LOG_LEVEL: info
+      CACHE_NAMESPACE: gt
+      RATE_LIMIT_LOGIN: 5
+      RATE_LIMIT_WINDOW: 60
+      FRONTEND_ORIGIN: http://localhost:5173
+      NODE_ENV: production
+    volumes:
+      - backend_logs:/app/logs
+    depends_on:
+      - postgres
+      - redis
+    ports:
+      - "3000:3000"
+    networks: [app]
+  frontend:
+    build: ./Frontend
+    depends_on:
+      - backend
+    environment:
+      VITE_APP_API_BASE: http://localhost:3000
+    ports:
+      - "5173:80"
+    networks: [app]
+  prometheus:
+    image: prom/prometheus:v2.54.1
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    networks: [app]
+  loki:
+    image: grafana/loki:3.1.1
+    command: ["-config.file=/etc/loki/local-config.yml"]
+    volumes:
+      - ./loki-config.yml:/etc/loki/local-config.yml:ro
+      - loki-data:/loki
+    ports:
+      - "3100:3100"
+    networks: [app]
+  promtail:
+    image: grafana/promtail:3.1.1
+    volumes:
+      - ./promtail-config.yml:/etc/promtail/config.yml:ro
+      - backend_logs:/var/log/app:ro
+    command: ["--config.file=/etc/promtail/config.yml"]
+    networks: [app]
+  grafana:
+    image: grafana/grafana:11.1.4
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: admin
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./grafana-provisioning-datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml:ro
+    ports:
+      - "3001:3000"
+    networks: [app]
+
+volumes:
+  pgdata:
+  backend_logs:
+  loki-data:
+  grafana-data:
+
+networks:
+  app:
+    driver: bridge

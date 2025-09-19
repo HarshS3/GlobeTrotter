@@ -1,8 +1,12 @@
 import { query } from '../config/db.js';
 import { ApiError } from '../core/apiError.js';
 
-export async function createTrip(userId, { name, description, start_date, end_date, cover_photo_url, start_location, end_location }) {
-  const { rows } = await query(`INSERT INTO trips (user_id,name,description,start_date,end_date,cover_photo_url,start_location,end_location) VALUES ($1,$2,$3,$4,$5,$6,$7,$8) RETURNING *`, [userId, name, description || null, start_date, end_date, cover_photo_url || null, start_location || null, end_location || null]);
+export async function createTrip(userId, { name, description, start_date, end_date, cover_photo_url, start_location, end_location, image_url }) {
+  const { rows } = await query(
+    `INSERT INTO trips (user_id,name,description,start_date,end_date,cover_photo_url,start_location,end_location,image_url)
+     VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9) RETURNING *`,
+    [userId, name, description || null, start_date, end_date, cover_photo_url || null, start_location || null, end_location || null, image_url || null]
+  );
   return rows[0];
 }
 

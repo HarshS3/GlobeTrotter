@@ -25,14 +25,15 @@ const logger = winston.createLogger({
   transports: [transport]
 });
 
-if (config.env !== 'production') {
-  logger.add(new winston.transports.Console({
-    format: winston.format.combine(
-      winston.format.colorize(),
-      winston.format.printf(info => `${info.timestamp} ${info.level}: ${info.message}`)
-    )
-  }));
-}
+// Console transport: colored in dev, pure JSON in production (for Loki)
+logger.add(new winston.transports.Console({
+  format: config.env === 'production'
+    ? winston.format.combine(winston.format.timestamp(), winston.format.json())
+    : winston.format.combine(
+        winston.format.colorize(),
+        winston.format.printf(info => `${info.timestamp} ${info.level}: ${info.message}`)
+      )
+}));
 
 export function withRequest(logger, requestId) {
   return {

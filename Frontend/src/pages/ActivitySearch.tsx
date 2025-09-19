@@ -1,77 +1,104 @@
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Select, SelectTrigger, SelectContent, SelectValue, SelectItem } from "@/components/ui/select";
-import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
-import { MagnifyingGlass } from "phosphor-react";
+import { useEffect, useState } from "react";
+import { api } from "@/lib/api";
 
-const mock = Array.from({ length: 8 }).map((_, i) => ({
-  id: i + 1,
-  title: ["City Walking Tour", "Museum Pass", "Food Tasting", "Boat Cruise"][i % 4],
-  location: "Barcelona, Spain",
-  image: `https://picsum.photos/seed/act${i}/600/360`,
-  price: 35 + i * 10,
-  rating: (4 + (i % 2) * 0.5).toFixed(1),
-}));
+type ActivityRecord = {
+  id: number;
+  title: string;
+  category?: string;
+  cost?: number;
+  start_time?: string;
+  duration_minutes?: number;
+  day_offset?: number;
+  notes?: string;
+  creator_email?: string;
+  stop_id: number;
+  stop_position: number;
+  stop_city: string;
+  stop_country?: string;
+  stop_start_date: string;
+  stop_end_date: string;
+  trip_id: number;
+  trip_name: string;
+  trip_start_location?: string;
+  trip_end_location?: string;
+  trip_start_date?: string;
+  trip_end_date?: string;
+  cover_photo_url?: string;
+  image_url?: string;
+};
 
 const ActivitySearch = () => {
+  const [activities, setActivities] = useState<ActivityRecord[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    async function load() {
+      setLoading(true);
+      try {
+  const { data } = await api.get('/activities');
+  if (!cancelled) setActivities(data);
+      } catch (e:any) {
+        if (!cancelled) setError('Failed to load trips');
+      } finally { if (!cancelled) setLoading(false); }
+    }
+    load();
+    return () => { cancelled = true; };
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5">
       <Navigation />
       <main className="container mx-auto px-6 pt-24 pb-12">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
-            <div>
-              <h1 className="text-4xl font-bold gradient-hero bg-clip-text text-transparent">Search activities</h1>
-              <p className="text-muted-foreground">Discover things to do and book ahead</p>
-            </div>
-            <div className="flex gap-2">
-              <Select>
-                <SelectTrigger className="w-40"><SelectValue placeholder="Sort by" /></SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="popular">Most popular</SelectItem>
-                  <SelectItem value="rating">Highest rated</SelectItem>
-                  <SelectItem value="price">Price</SelectItem>
-                </SelectContent>
-              </Select>
-              <Button variant="outline">Filters</Button>
-            </div>
+          <div className="mb-8">
+            <h1 className="text-4xl font-bold gradient-hero bg-clip-text text-transparent">All Activities</h1>
+            <p className="text-muted-foreground">Collaborative activities across every trip stop (latest first).</p>
           </div>
 
-          <div className="mb-6 flex items-center gap-3">
-            <div className="flex-1 glass rounded-full p-2 pl-4 pr-2 flex items-center gap-3">
-              <MagnifyingGlass size={20} className="text-muted-foreground" />
-              <Input className="bg-transparent border-none focus-visible:ring-0" placeholder="Search activities, tours, or places" />
-              <Button className="rounded-full gradient-hero">Search</Button>
-            </div>
-          </div>
+          {loading && <div className="text-muted-foreground">Loading...</div>}
+          {error && !loading && <div className="text-red-500 text-sm mb-4">{error}</div>}
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {mock.map((a, idx) => (
-              <motion.div key={a.id} initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: idx * 0.05 }}>
-                <Card className="glass-card overflow-hidden hover:scale-[1.02] transition-transform">
-                  <div className="h-44 overflow-hidden">
-                    <img src={a.image} alt={a.title} className="w-full h-full object-cover" />
-                  </div>
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-lg">{a.title}</CardTitle>
-                    <div className="text-sm text-muted-foreground">{a.location}</div>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <Badge variant="secondary">⭐ {a.rating}</Badge>
-                        <Badge>${a.price}</Badge>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {!loading && activities.map((a, idx) => {
+                const img = a.cover_photo_url || a.image_url || 'https://placehold.co/600x360?text=Activity';
+                return (
+                  <motion.div key={a.id} initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: idx * 0.02 }}>
+                    <Card className="glass-card overflow-hidden hover:scale-[1.02] transition-transform">
+                      <div className="h-44 overflow-hidden">
+                        <img src={img} alt={a.title} className="w-full h-full object-cover" />
                       </div>
-                      <Button size="sm" variant="outline">View</Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
+                      <CardHeader className="pb-2">
+                        <CardTitle className="text-lg flex flex-wrap gap-2 items-center">
+                          <span>{a.title}</span>
+                          {typeof a.cost === 'number' && a.cost > 0 && <span className="text-xs px-2 py-0.5 rounded bg-primary/10 text-primary">${a.cost.toFixed(2)}</span>}
+                        </CardTitle>
+                        <div className="text-xs text-muted-foreground flex flex-col gap-1">
+                          <span>Trip: {a.trip_name}</span>
+                          <span>Stop #{a.stop_position}: {a.stop_city}{a.stop_country ? `, ${a.stop_country}` : ''}</span>
+                          {a.start_time && <span>Starts {a.start_time}</span>}
+                          {a.duration_minutes && <span>Duration {a.duration_minutes}m</span>}
+                          {a.creator_email && <span className="opacity-70">by {a.creator_email}</span>}
+                        </div>
+                      </CardHeader>
+                      <CardContent>
+                        {a.notes && <div className="text-xs text-muted-foreground line-clamp-3 mb-2">{a.notes}</div>}
+                        <Button size="sm" variant="outline" className="w-full">View Trip</Button>
+                      </CardContent>
+                    </Card>
+                  </motion.div>
+                );
+              })}
+            </div>
+
+            {!loading && !activities.length && (
+              <div className="text-sm text-muted-foreground">No activities found yet. Add one via a trip stop.</div>
+            )}
         </motion.div>
       </main>
     </div>

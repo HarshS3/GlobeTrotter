@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { motion } from "framer-motion";
 import { useNavigate, Link } from "react-router-dom";
 import { useUser } from "@/context/UserContext";
+import { login as apiLogin } from "@/lib/api";
 import { useToast } from "@/hooks/use-toast";
 
 const Login = () => {
@@ -13,16 +14,19 @@ const Login = () => {
   const { user, setUser } = useUser();
   const { toast } = useToast();
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     const form = e.target as HTMLFormElement;
     const email = (form.elements.namedItem("email") as HTMLInputElement)?.value;
-    // Simulate: if we have a stored name, keep it; else derive a simple name from email prefix
-    let firstName = user?.firstName;
-    if (!firstName) firstName = (email || "traveler").split("@")[0];
-    setUser({ firstName, lastName: user?.lastName || "", avatarDataUrl: user?.avatarDataUrl });
-    toast({ title: `Hey, ${firstName}!`, description: "Welcome back." });
-    navigate("/trips");
+    const password = (form.elements.namedItem("password") as HTMLInputElement)?.value;
+    try {
+      const data = await apiLogin(email, password);
+      setUser({ firstName: data.firstName || email.split('@')[0], lastName: data.lastName || "", avatarDataUrl: undefined });
+      toast({ title: `Welcome back`, description: `Signed in as ${data.email}` });
+      navigate("/trips");
+    } catch (err: any) {
+      toast({ title: 'Login failed', description: err?.response?.data?.message || 'Check credentials', variant: 'destructive' });
+    }
   };
 
   return (

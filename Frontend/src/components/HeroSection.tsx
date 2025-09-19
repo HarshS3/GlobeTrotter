@@ -4,10 +4,12 @@ import { ArrowRight, MagnifyingGlass } from "phosphor-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Link, useNavigate } from "react-router-dom";
+import { useUser } from "@/context/UserContext";
 import { Globe } from "@/components/magicui/globe";
 
 const HeroSection = () => {
   const navigate = useNavigate();
+  const { user } = useUser();
   const [query, setQuery] = useState("");
 
   const stars = Array.from({ length: 120 });
@@ -61,10 +63,12 @@ const HeroSection = () => {
         </div>
       </div>
       {/* CTA buttons per mockup */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex gap-3">
-        <Link to="/login"><Button variant="secondary">Sign In</Button></Link>
-        <Link to="/register"><Button className="gradient-hero btn-neumorph">Get Started</Button></Link>
-      </div>
+      {!user && (
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex gap-3">
+          <Link to="/login"><Button variant="secondary">Sign In</Button></Link>
+          <Link to="/register"><Button className="gradient-hero btn-neumorph">Get Started</Button></Link>
+        </div>
+      )}
     </section>
   );
 };
