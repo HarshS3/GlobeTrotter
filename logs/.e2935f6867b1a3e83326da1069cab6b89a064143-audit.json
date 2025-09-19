@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\GlobeTrotter\\logs\\.e2935f6867b1a3e83326da1069cab6b89a064143-audit.json",
+    "files": [
+        {
+            "date": 1758252362516,
+            "name": "D:\\GlobeTrotter\\logs\\2025-09-19.log",
+            "hash": "75c5816e72ac16fe3fd528a2dbf0abf2df32b58ed2449801100181a87fd19177"
+        }
+    ],
+    "hashType": "sha256"
+}

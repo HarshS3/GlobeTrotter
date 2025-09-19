@@ -1,0 +1,36 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: globetrotter
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+  backend:
+    build: .
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@postgres:5432/globetrotter
+      REDIS_HOST: redis
+      JWT_SECRET: dev_docker_secret
+      ACCESS_TOKEN_TTL_MIN: 15
+      REFRESH_TOKEN_TTL_DAYS: 7
+      LOG_LEVEL: info
+      CACHE_NAMESPACE: gt
+      RATE_LIMIT_LOGIN: 5
+      RATE_LIMIT_WINDOW: 60
+    ports:
+      - "3000:3000"
+    command: ["node", "src/server.js"]
+volumes:
+  pgdata:
