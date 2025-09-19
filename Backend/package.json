@@ -1,0 +1,54 @@
+{
+  "name": "globetrotter-backend",
+  "version": "0.1.0",
+  "description": "GlobeTrotter modular monolith backend (Express, PostgreSQL, Redis, JWT, MFA)",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon --watch src src/server.js",
+    "start": "node src/server.js",
+    "start:prod": "cross-env NODE_ENV=production node src/server.js",
+    "migrate": "node src/scripts/migrate.js",
+  "seed": "node src/scripts/seedDemo.js",
+    "test": "cross-env NODE_ENV=test vitest run",
+    "test:watch": "cross-env NODE_ENV=test vitest",
+    "lint": "echo 'Add eslint config later'",
+    "prepare": "echo 'No git hooks yet'"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.0.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.12.0",
+    "qrcode": "^1.5.3",
+    "redis": "^4.7.0",
+    "speakeasy": "^2.0.0",
+    "uuid": "^9.0.1",
+    "winston": "^3.13.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.1.1",
+    "vitest": "^1.6.0"
+  },
+  "keywords": [
+    "express",
+    "postgresql",
+    "redis",
+    "jwt",
+    "mfa",
+    "backend"
+  ],
+  "author": "",
+  "license": "MIT"
+}

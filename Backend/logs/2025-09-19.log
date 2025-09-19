@@ -1,0 +1,269 @@
+{"error":"password authentication failed for user \"postgres\"","level":"error","message":"Migration failed","timestamp":"2025-09-19T03:26:02.693Z"}
+{"error":"password authentication failed for user \"postgres\"","level":"error","message":"Migration failed","timestamp":"2025-09-19T03:27:54.545Z"}
+{"error":"password authentication failed for user \"postgres\"","level":"error","message":"Migration failed","timestamp":"2025-09-19T03:28:32.728Z"}
+{"level":"info","message":"Running migration 001_init.sql","timestamp":"2025-09-19T03:30:59.543Z"}
+{"error":"password authentication failed for user \"postgres\"","level":"error","message":"Migration failed","timestamp":"2025-09-19T03:30:59.657Z"}
+{"level":"info","message":"Server listening on 3000","timestamp":"2025-09-19T03:39:48.620Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:48.669Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:48.675Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:48.734Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:48.844Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:49.003Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:49.207Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:49.476Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:49.786Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:50.150Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:50.556Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:51.023Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:51.540Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:52.045Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:52.553Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:53.071Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:53.580Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:54.086Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:54.593Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:55.098Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:55.617Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:56.123Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:56.630Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:57.133Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:57.653Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:58.757Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:59.265Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:39:59.783Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:40:00.292Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:40:00.802Z"}
+{"level":"info","message":"Shutdown initiated","timestamp":"2025-09-19T03:40:01.169Z"}
+{"level":"info","message":"Server listening on 3000","timestamp":"2025-09-19T03:42:21.159Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:42:21.202Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:42:21.209Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:42:21.277Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:42:21.384Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:42:21.554Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:42:21.770Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:42:22.030Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:42:22.338Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:42:22.709Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:42:23.126Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:42:23.591Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:42:24.109Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:42:24.616Z"}
+{"error":"connect ECONNREFUSED ::1:6379","level":"error","message":"Redis error","timestamp":"2025-09-19T03:42:25.130Z"}
+{"level":"info","message":"Shutdown initiated","timestamp":"2025-09-19T03:42:25.261Z"}
+{"level":"info","message":"Server listening on 3000","timestamp":"2025-09-19T03:43:26.756Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T03:43:26.795Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T03:43:26.826Z"}
+{"durationMs":195,"level":"info","message":"request","method":"GET","path":"/","requestId":"d1877f86-3bab-4946-b6a6-a7847634cfb4","status":404,"timestamp":"2025-09-19T03:44:17.081Z"}
+{"durationMs":4,"level":"info","message":"request","method":"GET","path":"/","requestId":"0967cb44-abf3-411e-a3af-d6541b108bdd","status":404,"timestamp":"2025-09-19T03:44:30.924Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T03:45:06.495Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T03:45:06.528Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T03:45:06.540Z"}
+{"durationMs":46,"level":"info","message":"request","method":"GET","path":"/","requestId":"3eec6523-6e89-4262-8764-2a8fea7511bc","status":404,"timestamp":"2025-09-19T03:45:17.986Z"}
+{"durationMs":146,"level":"info","message":"request","method":"GET","path":"/health","requestId":"30762dcd-ea9f-4690-be37-0ab59ae4933d","status":200,"timestamp":"2025-09-19T03:45:26.817Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:00:44.975Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:00:45.018Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:00:45.075Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:00:51.844Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:00:51.874Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:00:53.574Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:01:08.315Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:01:08.347Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:01:09.261Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:01:25.636Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:01:25.677Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:01:25.695Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:01:47.148Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:01:47.192Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:01:47.207Z"}
+{"level":"info","message":"Shutdown initiated","timestamp":"2025-09-19T04:02:21.335Z"}
+{"level":"info","message":"Shutdown complete","timestamp":"2025-09-19T04:02:21.353Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:02:33.604Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:02:33.638Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:02:33.658Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:10:18.391Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:10:18.438Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:10:18.468Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:10:30.806Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:10:30.837Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:10:30.853Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:10:41.100Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:10:41.130Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:10:41.140Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:10:48.779Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:10:48.821Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:10:48.829Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:10:54.161Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:10:54.194Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:10:54.203Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:11:01.710Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:11:01.740Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:11:01.752Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:14:34.217Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:14:34.251Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:14:34.271Z"}
+{"durationMs":97,"level":"info","message":"request","method":"POST","path":"/auth/register","requestId":"4aea5788-03df-4993-b99d-9379d29b36ff","status":400,"timestamp":"2025-09-19T04:14:37.658Z"}
+{"durationMs":29,"level":"info","message":"request","method":"POST","path":"/auth/register","requestId":"59118fd2-2cc3-4746-b22a-02f063a18574","status":400,"timestamp":"2025-09-19T04:16:46.187Z"}
+{"durationMs":21,"level":"info","message":"request","method":"POST","path":"/auth/register","requestId":"ce4505b7-fcfd-4751-abd2-d02cab8ff942","status":400,"timestamp":"2025-09-19T04:17:09.232Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:20:01.457Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:20:01.503Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:20:01.563Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:20:42.680Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:20:44.227Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:20:44.249Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:26:59.363Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:26:59.396Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:26:59.432Z"}
+{"error":"Expected double-quoted property name in JSON at position 235 (line 10 column 1)","level":"error","message":"Unhandled error","requestId":"a6eea53c-7b14-4fc4-a242-90192b6ac500","stack":"SyntaxError: Expected double-quoted property name in JSON at position 235 (line 10 column 1)\n    at JSON.parse (<anonymous>)\n    at parse (D:\\GlobeTrotter\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at D:\\GlobeTrotter\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)\n    at invokeCallback (D:\\GlobeTrotter\\node_modules\\raw-body\\index.js:238:16)\n    at done (D:\\GlobeTrotter\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (D:\\GlobeTrotter\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:524:28)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","timestamp":"2025-09-19T04:27:17.129Z"}
+{"durationMs":53,"level":"info","message":"request","method":"POST","path":"/auth/register","requestId":"a6eea53c-7b14-4fc4-a242-90192b6ac500","status":500,"timestamp":"2025-09-19T04:27:17.141Z"}
+{"error":"Expected double-quoted property name in JSON at position 235 (line 10 column 1)","level":"error","message":"Unhandled error","requestId":"e103f75b-cb24-4383-9e9b-90a83d158cac","stack":"SyntaxError: Expected double-quoted property name in JSON at position 235 (line 10 column 1)\n    at JSON.parse (<anonymous>)\n    at parse (D:\\GlobeTrotter\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at D:\\GlobeTrotter\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)\n    at invokeCallback (D:\\GlobeTrotter\\node_modules\\raw-body\\index.js:238:16)\n    at done (D:\\GlobeTrotter\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (D:\\GlobeTrotter\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:524:28)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","timestamp":"2025-09-19T04:27:26.294Z"}
+{"durationMs":5,"level":"info","message":"request","method":"POST","path":"/auth/register","requestId":"e103f75b-cb24-4383-9e9b-90a83d158cac","status":500,"timestamp":"2025-09-19T04:27:26.296Z"}
+{"durationMs":27,"level":"info","message":"request","method":"POST","path":"/auth/register","requestId":"4ac525ff-adc3-448a-a796-ffce8b0c829c","status":400,"timestamp":"2025-09-19T04:27:34.683Z"}
+{"durationMs":805,"level":"info","message":"request","method":"POST","path":"/auth/register","requestId":"0c1f213b-65a3-4c2d-a4a8-d8989ad7a822","status":201,"timestamp":"2025-09-19T04:27:54.478Z"}
+{"durationMs":636,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"8293d2ed-0378-47eb-b0d9-a93d309386f2","status":200,"timestamp":"2025-09-19T04:29:55.258Z"}
+{"durationMs":593,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"292cf60e-5adc-4cf5-8407-cb73ad02a2eb","status":200,"timestamp":"2025-09-19T04:30:00.739Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:30:26.474Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:30:26.517Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:30:26.546Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:46:44.340Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:46:44.375Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:46:44.438Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:47:07.931Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:47:07.973Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:47:07.992Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:47:13.410Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:47:13.440Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:47:13.452Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T04:47:51.937Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T04:47:51.975Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T04:47:51.996Z"}
+{"durationMs":44,"level":"info","message":"request","method":"POST","path":"/auth/status","requestId":"fb34792f-c296-4829-9e51-266c2fd21060","status":404,"timestamp":"2025-09-19T04:49:09.254Z"}
+{"durationMs":7,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"c744e686-b992-4f43-8aa8-fea1d5a0f8a1","status":200,"timestamp":"2025-09-19T04:49:14.628Z"}
+{"durationMs":24,"level":"info","message":"request","method":"GET","path":"/auth/login","requestId":"5025ab2c-f181-4a5b-8e57-7eb83398822d","status":404,"timestamp":"2025-09-19T04:50:20.500Z"}
+{"durationMs":742,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"f8e70117-d977-40ae-af4b-baeaaa144d55","status":200,"timestamp":"2025-09-19T04:50:28.116Z"}
+{"durationMs":2,"level":"info","message":"request","method":"GET","path":"/auth/regresh","requestId":"6d038734-cf31-4643-896e-b2a83ac0b8a0","status":404,"timestamp":"2025-09-19T04:50:40.385Z"}
+{"durationMs":1,"level":"info","message":"request","method":"GET","path":"/auth/refresh","requestId":"6366d19f-5c98-40c8-9d8f-1669374c51d5","status":404,"timestamp":"2025-09-19T04:50:49.336Z"}
+{"durationMs":2,"level":"info","message":"request","method":"GET","path":"/auth/refresh","requestId":"b0770f22-92a2-4fc9-ada3-ca5630bc243b","status":404,"timestamp":"2025-09-19T04:51:02.892Z"}
+{"durationMs":148,"level":"info","message":"request","method":"POST","path":"/auth/refresh","requestId":"a5f6238d-f979-4b10-bec4-f9c7a2d94146","status":200,"timestamp":"2025-09-19T04:51:48.739Z"}
+{"durationMs":3,"level":"info","message":"request","method":"POST","path":"/auth/status","requestId":"dfd1cb44-a2ee-4817-98f6-a0955c329d7c","status":404,"timestamp":"2025-09-19T04:51:56.686Z"}
+{"durationMs":87,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"b097ed9d-2ac6-4e44-8856-7d3daffa5ca0","status":200,"timestamp":"2025-09-19T04:52:02.972Z","userId":1}
+{"durationMs":2,"level":"info","message":"request","method":"GET","path":"/auth/logout","requestId":"91473343-d84a-406d-be64-09113317a486","status":404,"timestamp":"2025-09-19T04:56:22.969Z"}
+{"durationMs":96,"level":"info","message":"request","method":"POST","path":"/auth/logout","requestId":"2c3d19c7-f6f1-4b28-b338-7e56cc951d77","status":200,"timestamp":"2025-09-19T04:56:26.605Z","userId":1}
+{"durationMs":2,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"de9d3926-e59b-4b1c-bdf1-cfaa524447bb","status":200,"timestamp":"2025-09-19T04:56:34.629Z"}
+{"durationMs":9,"level":"info","message":"request","method":"GET","path":"/auth/login","requestId":"eb492be6-27d1-4ebe-aab7-a8d9152ed2b9","status":404,"timestamp":"2025-09-19T04:56:45.276Z"}
+{"durationMs":633,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"ff66d481-4f45-4f0d-aefa-543aa8de7b1a","status":200,"timestamp":"2025-09-19T04:56:49.689Z"}
+{"durationMs":4,"level":"info","message":"request","method":"POST","path":"/auth/setup2fa","requestId":"a584292e-c83a-4be9-82e2-fc25a974ca09","status":404,"timestamp":"2025-09-19T04:58:12.508Z"}
+{"durationMs":168,"level":"info","message":"request","method":"POST","path":"/auth/2fa/setup","requestId":"6f3f927d-b5c9-4ada-bb62-837f01b9f671","status":200,"timestamp":"2025-09-19T04:58:22.244Z","userId":1}
+{"durationMs":3,"level":"info","message":"request","method":"GET","path":"/png;base64,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","requestId":"ad3acdcb-178b-4e2b-8ba8-916be903cb32","status":404,"timestamp":"2025-09-19T04:58:35.152Z"}
+{"durationMs":130,"level":"info","message":"request","method":"POST","path":"/auth/2fa/verify","requestId":"78946622-e6ef-483e-ba09-47da69c4b4f8","status":200,"timestamp":"2025-09-19T04:59:35.877Z","userId":1}
+{"durationMs":1,"level":"info","message":"request","method":"POST","path":"/auth/2fa/forgot-password","requestId":"b734d3b8-d083-46f3-a371-00e86e0f300c","status":404,"timestamp":"2025-09-19T04:59:56.123Z"}
+{"durationMs":89,"level":"info","message":"request","method":"POST","path":"/auth/forgot-password","requestId":"bf9d5a4e-f80e-4b46-970a-4c4f86f803b1","status":200,"timestamp":"2025-09-19T05:00:03.393Z"}
+{"durationMs":14,"level":"info","message":"request","method":"POST","path":"/auth/reset-password","requestId":"207e897b-301f-43a3-aade-de2d1e447d42","status":400,"timestamp":"2025-09-19T05:00:56.401Z"}
+{"durationMs":662,"level":"info","message":"request","method":"POST","path":"/auth/reset-password","requestId":"e28fa60c-0eef-428c-95ec-78ee3eceb632","status":200,"timestamp":"2025-09-19T05:01:02.860Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T05:12:04.210Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T05:12:04.255Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T05:12:04.324Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T05:12:11.053Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T05:12:11.090Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T05:12:11.110Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T05:12:39.862Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T05:12:39.907Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T05:12:39.921Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T05:14:02.139Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T05:14:02.179Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T05:14:02.205Z"}
+{"durationMs":84,"level":"info","message":"request","method":"POST","path":"/trips","requestId":"59079906-9192-4b08-92a7-4dc5850698bb","status":401,"timestamp":"2025-09-19T05:17:21.529Z"}
+{"durationMs":5,"level":"info","message":"request","method":"POST","path":"/trips","requestId":"c919c8a2-7c1e-46a4-b598-45646681d4e5","status":401,"timestamp":"2025-09-19T05:17:40.385Z"}
+{"durationMs":5,"level":"info","message":"request","method":"POST","path":"/auth/status","requestId":"a99bb7d7-cc31-4f54-b9a7-fdc1844263a5","status":404,"timestamp":"2025-09-19T05:17:56.038Z"}
+{"durationMs":5,"level":"info","message":"request","method":"GET","path":"/auth/status","requestId":"6c2cae2f-83bf-4457-b604-7410f530e6b0","status":200,"timestamp":"2025-09-19T05:17:59.832Z"}
+{"durationMs":22,"level":"info","message":"request","method":"GET","path":"/auth/login","requestId":"cea2b753-061b-407f-820a-0dfb84e7f8c5","status":404,"timestamp":"2025-09-19T05:18:36.102Z"}
+{"durationMs":765,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"0f2abcbd-6147-4ca2-bea0-1cf7682a32e9","status":200,"timestamp":"2025-09-19T05:18:40.173Z"}
+{"durationMs":89,"level":"info","message":"request","method":"POST","path":"/trips/","requestId":"e11b4505-5ba8-4c62-897f-171606d706d6","status":403,"timestamp":"2025-09-19T05:18:53.861Z","userId":1}
+{"durationMs":2,"level":"info","message":"request","method":"POST","path":"/auth/2faverify","requestId":"f25f3f99-881c-405e-9a60-3733384017e1","status":404,"timestamp":"2025-09-19T05:19:40.372Z"}
+{"durationMs":4,"level":"info","message":"request","method":"POST","path":"/auth/2faverify","requestId":"b409a751-d6bc-499f-80e1-b4386eccb285","status":404,"timestamp":"2025-09-19T05:19:44.466Z"}
+{"durationMs":100,"level":"info","message":"request","method":"POST","path":"/auth/2fa/verify","requestId":"c2e275cf-fa53-4e34-9bb7-985d18e5359f","status":400,"timestamp":"2025-09-19T05:19:47.685Z","userId":1}
+{"durationMs":11,"level":"info","message":"request","method":"POST","path":"/auth/2fa/verify","requestId":"07465fc2-89db-4ba3-aea8-8113133eae9f","status":400,"timestamp":"2025-09-19T05:19:55.299Z","userId":1}
+{"durationMs":1,"level":"info","message":"request","method":"POST","path":"/auth/2fa/setyp","requestId":"cacd24d8-7b56-4a37-85c9-3c780e9c5763","status":404,"timestamp":"2025-09-19T05:20:02.485Z"}
+{"durationMs":154,"level":"info","message":"request","method":"POST","path":"/auth/2fa/setup","requestId":"c7efa5eb-ca94-42cf-8a43-0b61422ac9e6","status":200,"timestamp":"2025-09-19T05:20:06.701Z","userId":1}
+{"durationMs":22,"level":"info","message":"request","method":"POST","path":"/auth/2fa/verify","requestId":"dedc630c-8eb4-4395-9793-0c12373158bc","status":400,"timestamp":"2025-09-19T05:20:14.481Z","userId":1}
+{"durationMs":29,"level":"info","message":"request","method":"POST","path":"/auth/2fa/setup","requestId":"cb4852d9-cb4d-461a-aeb8-1e2572713287","status":200,"timestamp":"2025-09-19T05:20:24.148Z","userId":1}
+{"durationMs":97,"level":"info","message":"request","method":"POST","path":"/auth/2fa/verify","requestId":"9c9c1679-6a84-40cb-877c-0fd537e2237a","status":400,"timestamp":"2025-09-19T05:21:15.461Z","userId":1}
+{"durationMs":90,"level":"info","message":"request","method":"POST","path":"/auth/2fa/verify","requestId":"a0d89a74-9511-4cce-a6f6-6af348cf0801","status":400,"timestamp":"2025-09-19T05:21:55.271Z","userId":1}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T05:23:17.674Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T05:23:17.717Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T05:23:17.781Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T05:23:26.173Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T05:23:26.212Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T05:23:26.225Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T05:24:20.387Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T05:24:20.423Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T05:24:20.443Z"}
+{"durationMs":844,"level":"info","message":"request","method":"POST","path":"/auth/2fa/verify","requestId":"57e278bb-28cc-475d-a058-7cf5d4ead5ca","status":400,"timestamp":"2025-09-19T05:24:21.495Z","userId":1}
+{"durationMs":19,"level":"info","message":"request","method":"POST","path":"/auth/2fa/verify","requestId":"c934350a-106b-4360-8fa0-ca94bbc922bf","status":400,"timestamp":"2025-09-19T05:24:30.558Z","userId":1}
+{"durationMs":118,"level":"info","message":"request","method":"POST","path":"/auth/2fa/verify","requestId":"eacb59af-7402-49eb-b811-db63d92eb564","status":400,"timestamp":"2025-09-19T05:25:05.027Z","userId":1}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T05:26:12.963Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T05:26:13.000Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T05:26:13.020Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T05:27:05.672Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T05:27:05.704Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T05:27:05.717Z"}
+{"durationMs":163,"level":"info","message":"request","method":"POST","path":"/trips/","requestId":"c26470d2-3555-4061-b0ef-98d0745d1f2d","status":400,"timestamp":"2025-09-19T05:27:18.593Z","userId":1}
+{"durationMs":93,"level":"info","message":"request","method":"POST","path":"/trips/","requestId":"6dc5ff55-edf2-44ac-a4ae-f66fced4b39f","status":400,"timestamp":"2025-09-19T05:27:36.126Z","userId":1}
+{"durationMs":41,"level":"info","message":"request","method":"POST","path":"/trips/","requestId":"d5675a11-35f1-4c95-9d4c-dac29427c73b","status":201,"timestamp":"2025-09-19T05:27:43.349Z","userId":1}
+{"durationMs":101,"level":"info","message":"request","method":"PUT","path":"/trips/1","requestId":"afa80b7e-c007-48c9-ad5d-ae0ba1d2e448","status":200,"timestamp":"2025-09-19T05:29:23.918Z","userId":1}
+{"durationMs":91,"level":"info","message":"request","method":"GET","path":"/trips/","requestId":"1220baa3-6981-4fd0-9460-bc87e0f3f4c7","status":200,"timestamp":"2025-09-19T05:29:57.914Z","userId":1}
+{"error":"invalid input syntax for type integer: \"budget\"","level":"error","message":"Unhandled error","requestId":"8e8e6f9d-c588-43d0-8364-171712e5250d","stack":"error: invalid input syntax for type integer: \"budget\"\n    at D:\\GlobeTrotter\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async getTrip (file:///D:/GlobeTrotter/src/models/trips.js:15:20)\n    at async getTripHandler (file:///D:/GlobeTrotter/src/controllers/tripController.js:44:18)","timestamp":"2025-09-19T05:30:24.635Z"}
+{"durationMs":93,"level":"info","message":"request","method":"GET","path":"/trips/budget","requestId":"8e8e6f9d-c588-43d0-8364-171712e5250d","status":500,"timestamp":"2025-09-19T05:30:24.638Z","userId":1}
+{"durationMs":109,"level":"info","message":"request","method":"GET","path":"/trips/1/budget","requestId":"90c8b2ba-d085-42e5-8630-6c51bced13f0","status":200,"timestamp":"2025-09-19T05:30:53.251Z","userId":1}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T05:53:08.631Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T05:53:08.672Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T05:53:08.800Z"}
+{"durationMs":105,"level":"info","message":"request","method":"GET","path":"/trips/1/stops","requestId":"b0b2454e-cc9f-4420-a80a-7d978f2234d8","status":401,"timestamp":"2025-09-19T05:53:28.611Z"}
+{"durationMs":35,"level":"info","message":"request","method":"GET","path":"/auth/login","requestId":"88d67df5-7ba7-4602-9eac-775517af4a83","status":404,"timestamp":"2025-09-19T05:53:41.275Z"}
+{"durationMs":934,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"13126aca-83d2-4f9f-88c6-36ae03c6c2e7","status":200,"timestamp":"2025-09-19T05:53:56.781Z"}
+{"durationMs":125,"level":"info","message":"request","method":"POST","path":"/trips/1/stops","requestId":"7ad44a0c-6f53-4025-ab59-a71945be9c89","status":201,"timestamp":"2025-09-19T05:54:15.465Z","userId":1}
+{"durationMs":107,"level":"info","message":"request","method":"POST","path":"/trips/1/stops","requestId":"b5bf528d-35bc-4e38-bd07-c13c0b40e29c","status":201,"timestamp":"2025-09-19T05:54:29.360Z","userId":1}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T07:27:37.896Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T07:27:37.936Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T07:27:38.054Z"}
+{"durationMs":66,"level":"info","message":"request","method":"POST","path":"/trips/activities","requestId":"8cff37aa-a3f9-4d53-8747-fa78fce42df4","status":401,"timestamp":"2025-09-19T07:29:01.989Z"}
+{"durationMs":1242,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"415730fe-5a5c-4c99-9992-4be0d31c1dbc","status":200,"timestamp":"2025-09-19T07:29:20.192Z"}
+{"durationMs":97,"level":"info","message":"request","method":"POST","path":"/trips/activities","requestId":"89213d1f-bb5a-492f-b7da-39003e49eaae","status":404,"timestamp":"2025-09-19T07:29:34.988Z","userId":1}
+{"durationMs":104,"level":"info","message":"request","method":"POST","path":"/trips/1/activities","requestId":"c30fe7db-3402-4fc4-93b2-014000e85f44","status":404,"timestamp":"2025-09-19T07:29:57.253Z","userId":1}
+{"durationMs":94,"level":"info","message":"request","method":"POST","path":"/trips/1/activities","requestId":"d8842b21-0fff-4cc4-ad7f-f3cae418c045","status":404,"timestamp":"2025-09-19T07:31:51.858Z","userId":1}
+{"durationMs":4,"level":"info","message":"request","method":"POST","path":"/stops/1/activities","requestId":"3c1a035e-46da-466f-ac01-257803ca4f02","status":404,"timestamp":"2025-09-19T07:32:53.888Z"}
+{"durationMs":2,"level":"info","message":"request","method":"POST","path":"/stops/1/activities","requestId":"644d43ff-f9d6-48f5-ae0f-c3fc1d385998","status":404,"timestamp":"2025-09-19T07:33:41.615Z"}
+{"durationMs":2,"level":"info","message":"request","method":"POST","path":"/tstops/1/activitiesrips/","requestId":"53e48608-a646-477b-8174-736f08d08897","status":404,"timestamp":"2025-09-19T07:33:51.594Z"}
+{"durationMs":101,"level":"info","message":"request","method":"POST","path":"/trips/stops/1/activities","requestId":"e95fe642-9f0d-470f-ba3f-2d666735487b","status":400,"timestamp":"2025-09-19T07:33:58.174Z","userId":1}
+{"level":"info","message":"Shutdown initiated","timestamp":"2025-09-19T07:37:08.051Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T07:37:43.393Z"}
+{"error":"Connection timeout","level":"error","message":"Redis error","timestamp":"2025-09-19T07:37:48.487Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T07:37:53.327Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T07:37:53.478Z"}
+{"durationMs":286,"level":"info","message":"request","method":"POST","path":"/trips/stops/1/activities","requestId":"0d932e88-2ec7-4689-b5e8-c86426a155e4","status":201,"timestamp":"2025-09-19T07:40:48.571Z","userId":1}
+{"durationMs":122,"level":"info","message":"request","method":"GET","path":"/trips/stops/1/activities","requestId":"4b2188b6-686b-4d41-a818-6d124f301b0d","status":200,"timestamp":"2025-09-19T07:43:37.906Z","userId":1}
+{"durationMs":7,"level":"info","message":"request","method":"GET","path":"/trips/1/budget","requestId":"2bd29b63-0df8-45fb-8e1b-42dc514b0fa9","status":401,"timestamp":"2025-09-19T07:45:27.679Z"}
+{"durationMs":45,"level":"info","message":"request","method":"GET","path":"/auth/login","requestId":"4a9381fd-cb3b-491d-93e8-666906db602a","status":404,"timestamp":"2025-09-19T07:45:43.707Z"}
+{"durationMs":892,"level":"info","message":"request","method":"POST","path":"/auth/login","requestId":"2bc24f75-cfb6-47d1-8517-9b91e13a45dd","status":200,"timestamp":"2025-09-19T07:45:49.614Z"}
+{"durationMs":155,"level":"info","message":"request","method":"GET","path":"/trips/1/budget","requestId":"232e02cb-29b5-4e95-bf45-12e4922a4ab1","status":200,"timestamp":"2025-09-19T07:46:11.001Z","userId":1}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T07:49:03.485Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T07:49:03.531Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T07:49:03.586Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T07:49:14.388Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T07:49:14.469Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T07:49:14.486Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T07:51:16.111Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T07:51:16.148Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T07:51:16.182Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T07:51:19.536Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T07:51:19.746Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T07:51:20.531Z"}
+{"durationMs":399,"level":"info","message":"request","method":"GET","path":"/trips/1/itineary","requestId":"0f39b291-f182-44ec-82ef-93a521abbad0","status":404,"timestamp":"2025-09-19T07:51:28.132Z","userId":1}
+{"durationMs":141,"level":"info","message":"request","method":"GET","path":"/trips/1/itinerary","requestId":"6bad2aa3-35a9-424c-9e79-b226e6aef99e","status":200,"timestamp":"2025-09-19T07:51:38.968Z","userId":1}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T08:01:32.766Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T08:01:32.805Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T08:01:32.830Z"}
+{"level":"info","message":"Shutdown initiated","timestamp":"2025-09-19T08:03:21.115Z"}
+{"level":"info","message":"Shutdown complete","timestamp":"2025-09-19T08:03:21.135Z"}
+{"level":"info","message":"Server listening on http://localhost:3000","timestamp":"2025-09-19T08:39:40.695Z"}
+{"level":"info","message":"Redis connecting","timestamp":"2025-09-19T08:39:40.774Z"}
+{"level":"info","message":"Redis ready","timestamp":"2025-09-19T08:39:41.032Z"}
